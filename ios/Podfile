@@ -1,0 +1,14 @@
+platform :ios, '12.0'
+
+target 'Runner' do
+  use_frameworks!
+
+  # Segment pods
+  pod 'Analytics'
+  pod 'Segment-CleverTap'
+  pod 'CleverTap-iOS-SDK'
+
+  target 'RunnerTests' do
+    inherit! :search_paths
+  end
+end
