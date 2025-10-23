@@ -31,16 +31,5 @@ class SegmentCleverTap {
     });
   }
 
-  /// Track a screen view
-  // static Future<void> screen(String screenName, Map<String, dynamic>? properties) async {
-  //   await _channel.invokeMethod('screen', {
-  //     'screenName': screenName,
-  //     'properties': properties ?? {},
-  //   });
-  // }
 
-  /// Reset (logout)
-  // static Future<void> reset() async {
-  //   await _channel.invokeMethod('reset');
-  // }
 }

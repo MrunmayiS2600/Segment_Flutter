@@ -74,21 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
     _showSnackBar('Purchase event tracked!');
   }
 
-  /// Track a screen view
-  // Future<void> _trackScreen() async {
-  //   await SegmentCleverTap.screen('Home Screen', {'source': 'App Start'});
-  //   _showSnackBar('Screen event tracked!');
-  // }
-
-  /// Track user login
-  // Future<void> _trackLogin() async {
-  //   await SegmentCleverTap.track('User Logged In', {
-  //     'method': 'Google',
-  //     'timestamp': DateTime.now().toIso8601String(),
-  //   });
-  //   _showSnackBar('Login event tracked!');
-  // }
-
   /// Track product view
   Future<void> _trackProductView() async {
     await SegmentCleverTap.track('Product Viewed', {
@@ -110,20 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _showSnackBar('Add to cart tracked!');
   }
 
-  /// Track sign up
-  // Future<void> _trackSignUp() async {
-  //   await SegmentCleverTap.track('User Signed Up', {
-  //     'plan': 'Premium',
-  //     'referral': 'Instagram Campaign',
-  //   });
-  //   _showSnackBar('Sign up event tracked!');
-  // }
 
-  // /// Reset user (logout)
-  // Future<void> _resetUser() async {
-  //   await SegmentCleverTap.reset();
-  //   _showSnackBar('User data reset (logged out)!');
-  // }
 
   @override
   Widget build(BuildContext context) {
